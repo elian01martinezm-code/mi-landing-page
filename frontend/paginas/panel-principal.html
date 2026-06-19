@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../recursos/css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Gestion Ganadera</h1>
+    </div>
+    <nav>
+        <a href="panel-principal.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="control-sanitario.html">Salud</a>
+        <a href="inventario.html">Inventario</a>
+        <a href="reproduccion.html">Reproducción</a>
+        <a href="reportes.html">Reportes</a>
+    </nav>
+    <details class="usuario-dropdown">
+        <summary class="usuario-btn">Oscar Navarro</summary>
+        <div class="dropdown-content">
+            <a href="index.html" class="btn-logout">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                    <polyline points="16 17 21 12 16 7"/>
+                    <line x1="21" y1="12" x2="9" y2="12"/>
+                </svg>
+                Cerrar sesión
+            </a>
+        </div>
+    </details>
+</header>
+
+<main>
+    <p><strong>Bienvenido, Oscar</strong> · Miércoles 3 de junio de 2026</p>
+
+    <section id="modulos">
+        <h2>Módulos del Sistema</h2>
+        <div class="modulos">
+            <a href="registro.html" class="modulo">Registro de Bovinos</a>
+            <a href="inventario.html" class="modulo">Inventario</a>
+            <a href="control-sanitario.html" class="modulo">Salud</a>
+            <a href="reproduccion.html" class="modulo">Reproducción</a>
+            <a href="reportes.html" class="modulo">Reportes</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Resumen</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Total bovinos activos</th>
+                    <th>Alertas de vacuna hoy</th>
+                    <th>Vacunas al día</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>120</td>
+                    <td>3</td>
+                    <td>117</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Accesos rápidos</h2>
+        <button>+ Registrar bovino</button>
+        <button>Registrar vacuna</button>
+        <button>Registrar parto</button>
+        <button>Reportar novedad</button>
+    </section>
+
+    <section>
+        <h2>Alertas del día <small>(3 pendientes)</small></h2>
+        <ul>
+            <li>COL-0412 · Cebú — vacuna antiaftosa vencida <small>Vence hoy</small></li>
+            <li>COL-0334 · Holstein — revisión veterinaria pendiente <small>Vence hoy</small></li>
+            <li>COL-0289 · Simmental — brucelosis próxima a vencer <small>Vence en 3 días</small></li>
+            <li>COL-0201 · Brahman — todas las vacunas al día <small>Sin novedades</small></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Próximos eventos <small>(Esta semana)</small></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Evento</th>
+                    <th>Detalle</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>05 Jun</td>
+                    <td>Vacunación lote A</td>
+                    <td>18 animales · Potrero Norte</td>
+                    <td>Vacuna</td>
+                </tr>
+                <tr>
+                    <td>07 Jun</td>
+                    <td>Parto esperado — Lola</td>
+                    <td>COL-0334 · Holstein</td>
+                    <td>Parto</td>
+                </tr>
+                <tr>
+                    <td>09 Jun</td>
+                    <td>Revisión veterinaria</td>
+                    <td>5 animales · Revisión general</td>
+                    <td>Revisión</td>
+                </tr>
+                <tr>
+                    <td>12 Jun</td>
+                    <td>Desparasitación lote B</td>
+                    <td>24 animales · Potrero Sur</td>
+                    <td>Vacuna</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Buscar bovino</h2>
+        <form>
+            <input type="search" placeholder="Buscar por número de chapeta...">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Bovinos recientes <small>(Mostrando 5 de 120)</small></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chapeta</th>
+                    <th>Nombre</th>
+                    <th>Raza</th>
+                    <th>Sexo</th>
+                    <th>Peso</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>COL-0201</td>
+                    <td>Estrella</td>
+                    <td>Brahman</td>
+                    <td>Hembra</td>
+                    <td>480 kg</td>
+                    <td>Sano</td>
+                </tr>
+                <tr>
+                    <td>COL-0334</td>
+                    <td>Lola</td>
+                    <td>Holstein</td>
+                    <td>Hembra</td>
+                    <td>510 kg</td>
+                    <td>Gestante</td>
+                </tr>
+                <tr>
+                    <td>COL-0412</td>
+                    <td>Torito</td>
+                    <td>Cebú</td>
+                    <td>Macho</td>
+                    <td>395 kg</td>
+                    <td>Revisión</td>
+                </tr>
+                <tr>
+                    <td>COL-0289</td>
+                    <td>Luna</td>
+                    <td>Simmental</td>
+                    <td>Hembra</td>
+                    <td>540 kg</td>
+                    <td>Sano</td>
+                </tr>
+                <tr>
+                    <td>COL-0455</td>
+                    <td>Toro Rey</td>
+                    <td>Brahman</td>
+                    <td>Macho</td>
+                    <td>620 kg</td>
+                    <td>Sano</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script>
+    // 1. Leer los datos que guardamos en el login
+    const usuarioLogueado = localStorage.getItem('usuario');
+    
+    // 2. Si no existen datos, significa que no ha iniciado sesión
+    if (!usuarioLogueado) {
+        alert('Acceso denegado. Por favor, inicia sesión.');
+        window.location.href = 'login.html';
+    } else {
+        // 3. Opcional: Si quieres pintar el nombre del usuario en pantalla
+        const usuario = JSON.parse(usuarioLogueado);
+        console.log("Bienvenido al sistema de Gestión Ganadera:", usuario.nombre);
+        
+        // Si tienes un elemento HTML con id="nombre-usuario", descomenta la línea de abajo:
+        // document.getElementById('nombre-usuario').textContent = usuario.nombre;
+    }
+
+    // Función para el botón de salir de tu menú
+    function cerrarSesion() {
+        localStorage.removeItem('usuario');
+        window.location.href = '../js/login.html';
+    }
+</script>
+</main>
+</body>
+</html>

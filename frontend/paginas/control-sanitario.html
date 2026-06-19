@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Sanitario</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../recursos/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="panel-principal.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="inventario.html">Inventario</a>
+        <a href="reproduccion.html">Reproducción</a>
+        <a href="reportes.html">Reportes</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Control Sanitario</h2>
+        <form>
+            <label>Chapeta</label>
+            <input type="text">
+
+            <label>Vacuna</label>
+            <input type="text">
+
+            <label>Fecha Aplicación</label>
+            <input type="date">
+
+            <label>Próxima Dosis</label>
+            <input type="date">
+
+            <label>Veterinario</label>
+            <input type="text">
+
+            <label>Observaciones</label>
+            <textarea></textarea>
+
+            <button type="submit">Registrar Vacuna</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Alertas de Vacunación</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chapeta</th>
+                    <th>Vacuna</th>
+                    <th>Fecha Programada</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0045</td>
+                    <td>Aftosa</td>
+                    <td>05/06/2026</td>
+                    <td>⚠ Aplicar Hoy</td>
+                </tr>
+                <tr>
+                    <td>0078</td>
+                    <td>Brucelosis</td>
+                    <td>06/06/2026</td>
+                    <td>⚠ Aplicar Mañana</td>
+                </tr>
+                <tr>
+                    <td>0033</td>
+                    <td>Carbón Sintomático</td>
+                    <td>08/06/2026</td>
+                    <td>⏳ En 3 días</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Historial Veterinario</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chapeta</th>
+                    <th>Vacuna</th>
+                    <th>Fecha</th>
+                    <th>Veterinario</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Aftosa</td>
+                    <td>10/05/2026</td>
+                    <td>Dr. Pérez</td>
+                    <td>Aplicación exitosa</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Brucelosis</td>
+                    <td>15/05/2026</td>
+                    <td>Dra. Gómez</td>
+                    <td>Sin novedades</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>IBR</td>
+                    <td>20/05/2026</td>
+                    <td>Dr. Ramírez</td>
+                    <td>Control preventivo</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>
