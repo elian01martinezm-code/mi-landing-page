@@ -1,4 +1,4 @@
-name: Validacion Landing Page
+name: Validacion Completa del Proyecto
 
 on:
   push:
@@ -16,6 +16,7 @@ jobs:
       - name: Descargar repositorio
         uses: actions/checkout@v4
 
+  
       - name: Verificar index.html
         run: test -f frontend/index.html
 
@@ -27,3 +28,9 @@ jobs:
 
       - name: Verificar panel principal
         run: test -f frontend/paginas/panel-principal.html
+
+      - name: Verificar servidor de Node.js
+        run: test -f backend/server.js
+
+      - name: Verificar archivo de configuración package.json
+        run: test -f backend/package.json
